@@ -22,46 +22,46 @@ Note that it can be connected via a usb to serial cable, or directly with the pr
 
 ### Print the Tenma command help
 ```
-./tenmaControl.py -h
+./tenma_72_2710.py -h
 ```
 
 ### Get the Tenma model info
 ```
-./tenmaControl.py -v /dev/ttyACM0
+./tenma_72_2710.py -v /dev/ttyACM0
 ```
 
 ### Get the Tenma ON/OFF state
 ```
-./tenmaControl.py -s /dev/ttyACM0
+./tenma_72_2710.py -s /dev/ttyACM0
 ```
 
 ### Set the Tenma output to ON
 ```
-./tenmaControl.py --on /dev/ttyACM0
+./tenma_72_2710.py --on /dev/ttyACM0
 ```
 
 ### Set the Tenma output to OFF
 ```
-./tenmaControl.py --oFF /dev/ttyACM0
+./tenma_72_2710.py --oFF /dev/ttyACM0
 ```
 
 ### Set the Tenma Voltage (mV)
 ```
-./tenmaControl.py -sv 5000 /dev/ttyACM0
+./tenma_72_2710.py -sv 5000 /dev/ttyACM0
 ```
 
 ### Get the Tenma Voltage (V)
 ```
-./tenmaControl.py -gv /dev/ttyACM0
+./tenma_72_2710.py -gv /dev/ttyACM0
 ```
 
 ### Set the Tenma Current (mA)
 ```
-./tenmaControl.py -sc 200 /dev/ttyACM0
+./tenma_72_2710.py -sc 200 /dev/ttyACM0
 ```
 
 ### Get the Tenma Current (A)
 ```
-./tenmaControl.py -gc /dev/ttyACM0
+./tenma_72_2710.py -gc /dev/ttyACM0
 ```
 
