@@ -1,0 +1,16 @@
+Command			|	Description
+--------------------------------------------------------------------------------------------
+ISET{Channel}:{Amperes}	|	Set Current
+ISET?				|	Get the current output setting
+VSET{Channel}:{Volts}		|	Set Voltage
+VSET?				|	Get the Voltage setting
+IOUT?				|	Get the actual output current
+VOUT?				|	Get the actual output voltage
+BEEP[1|0]			|	Enable/disable the beeping.
+OUT[1|0]			|	Turns ON/OFF the output.
+STATUS?			|	Return the TENMA status.
+*IDN?				|	Return the identifier string for the power supply unit.
+RCL{index}			|	Load a setting from memory.
+SAV{index}			|	Save current setting to memory.
+OCP[1|0]			|	Set overcurrent protection.
+OVP[1|0]			|	Set overvoltage protection.
