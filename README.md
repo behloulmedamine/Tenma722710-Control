@@ -2,7 +2,7 @@
 
 Provides a basic controller (tested on Linux) for a **TENMA** DC power supply via serial interface. Working on python 2.7 and python 3.
 
-- tenmaControl.py (command line utility)
+- tenma\_72_2710.py (command line utility)
 	
 # What is this?
 
@@ -18,39 +18,39 @@ pip install pyserial
 
 Note that it can be connected via a usb to serial cable, or directly with the provided USB cable. In Linux it identifies the usb as Virtual Com Port , running dmesg to get where the /dev/ttyACMX device registerd and pointing tenmaControl.py to that device should work.
 
-## Print the Tenma command help
+### Print the Tenma command help
 
-./tenmaControl.py -h
+> ./tenmaControl.py -h
  
-## get the Tenma model info
+### Get the Tenma model info
 
-./tenmaControl.py -v /dev/ttyACM0
+> ./tenmaControl.py -v /dev/ttyACM0
 
-## get the Tenma ON/OFF state
+### Get the Tenma ON/OFF state
 
-./tenmaControl.py -s /dev/ttyACM0
+> ./tenmaControl.py -s /dev/ttyACM0
 
-## set the Tenma output to ON
+### Set the Tenma output to ON
 
-./tenmaControl.py --on /dev/ttyACM0
+> ./tenmaControl.py --on /dev/ttyACM0
 
-## set the Tenma output to OFF
+### Set the Tenma output to OFF
 
-./tenmaControl.py --oFF /dev/ttyACM0
+> ./tenmaControl.py --oFF /dev/ttyACM0
 
-## set the Tenma Voltage (mV)
+### Set the Tenma Voltage (mV)
 
-./tenmaControl.py -sv 5000 /dev/ttyACM0
+> ./tenmaControl.py -sv 5000 /dev/ttyACM0
 
-## get the Tenma Voltage (V)
+### Get the Tenma Voltage (V)
 
-./tenmaControl.py -gv /dev/ttyACM0
+> ./tenmaControl.py -gv /dev/ttyACM0
 
-## set the Tenma Current (mA)
+### Set the Tenma Current (mA)
 
-./tenmaControl.py -sc 200 /dev/ttyACM0
+> ./tenmaControl.py -sc 200 /dev/ttyACM0
 
-## get the Tenma Current (A)
+### Get the Tenma Current (A)
 
-./tenmaControl.py -gc /dev/ttyACM0
+> ./tenmaControl.py -gc /dev/ttyACM0
 
