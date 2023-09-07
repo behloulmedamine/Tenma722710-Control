@@ -9,3 +9,5 @@ tenmaControl.py (command line utility)
 # What is this?
 
 A small command line program / library to setup a Tenma 72-2710 DC POWER SUPPLY from your computer via SERIAL.
+
+# To install
