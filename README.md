@@ -12,7 +12,9 @@ A small command line program / library to setup a **Tenma 72-2710** DC POWER SUP
 
 It does not have many requirements, so you might just clone the repo and run it. install the following package first.
 
-`pip install pyserial`
+```
+pip install pyserial
+```
 
 # Usage examples
 
@@ -22,35 +24,44 @@ Note that it can be connected via a usb to serial cable, or directly with the pr
 ```
 ./tenmaControl.py -h
 ```
-### Get the Tenma model info
 
-`./tenmaControl.py -v /dev/ttyACM0`
+### Get the Tenma model info
+```
+./tenmaControl.py -v /dev/ttyACM0
+```
 
 ### Get the Tenma ON/OFF state
-
-`./tenmaControl.py -s /dev/ttyACM0`
+```
+./tenmaControl.py -s /dev/ttyACM0
+```
 
 ### Set the Tenma output to ON
-
-`./tenmaControl.py --on /dev/ttyACM0`
+```
+./tenmaControl.py --on /dev/ttyACM0
+```
 
 ### Set the Tenma output to OFF
-
-`./tenmaControl.py --oFF /dev/ttyACM0`
+```
+./tenmaControl.py --oFF /dev/ttyACM0
+```
 
 ### Set the Tenma Voltage (mV)
-
-`./tenmaControl.py -sv 5000 /dev/ttyACM0`
+```
+./tenmaControl.py -sv 5000 /dev/ttyACM0
+```
 
 ### Get the Tenma Voltage (V)
-
-`./tenmaControl.py -gv /dev/ttyACM0`
+```
+./tenmaControl.py -gv /dev/ttyACM0
+```
 
 ### Set the Tenma Current (mA)
-
-`./tenmaControl.py -sc 200 /dev/ttyACM0`
+```
+./tenmaControl.py -sc 200 /dev/ttyACM0
+```
 
 ### Get the Tenma Current (A)
-
-`./tenmaControl.py -gc /dev/ttyACM0`
+```
+./tenmaControl.py -gc /dev/ttyACM0
+```
 
